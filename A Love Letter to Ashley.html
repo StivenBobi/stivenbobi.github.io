@@ -1,0 +1,85 @@
+
+<!-- saved from url=(0048)file:///C:/Users/toshiba/Documents/ba821~ue.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>A Love Letter to Ashley</title>
+    <style>
+      body {
+        background-image: url('https://media.istockphoto.com/id/1028122658/photo/pink-rose-bush-closeup-on-field-background.jpg?s=612x612&w=0&k=20&c=M3G3fgnOpCOZTFOXN49ERYn-i_SJEM78s9BuNEsaC-w=');
+      background-size: 200%, cover;
+        background-position: center;
+        font-family: 'Luminari', fantasy;
+        color: #fff;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      header {
+        padding: 10px 20px;
+        text-align: center;
+      }
+
+      .letter {
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 5px #000;
+        max-width: 700px;
+        text-align: center;
+      }
+
+      p {
+        font-size: 1.2rem;
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="letter" style="opacity: 1; transition: opacity 2s ease 0s;">
+        <p>My dearest Ashley,</p>
+        <p>As Valentine's Day approaches, I want to take a moment to express my love and gratitude for you. You have brought so much joy, happiness, and love into my life, and I feel incredibly lucky to have you by my side. </p>
+        <p>You are my rock, my best friend, and my soulmate. Your kindness, support, and unwavering love have been a constant source of comfort and inspiration to me, and I am truly grateful to have you in my life. </p>
+        <p>I love the way you light up a room with your smile, the way you always know how to make me laugh, and the way you make me feel special and loved every day. I cherish the moments we spend together, whether we're exploring new places, trying new things, or just snuggling on the couch.</p>
+        <p>You are the missing piece in my life that I never knew I needed, and I am so grateful that you came into my life. I am beyond blessed to call you my partner, my lover, and my best friend. </p>
+        <p>As we celebrate another Valentine's Day together, I want you to know how much I love you and how grateful I am for your presence in my life. I look forward to spending many more Valentine's Days, and every other day, with you by my side.</p>
+        <p>All my love,</p>
+        <p>Stiven</p>
+      </section>
+    </main>
+    <script>
+      // Add your desired animations or other custom JavaScript here.
+       const letter = document.querySelector('.letter');
+  letter.style.opacity = 0;
+
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      letter.style.transition = 'opacity 2s';
+      letter.style.opacity = 1;
+    }, 500);
+  });
+
+  // Heart beat animation for the header
+  const header = document.querySelector('header');
+  let scale = 1;
+  let growing = true;
+
+  setInterval(() => {
+    header.style.transform = `scale(${scale})`;
+    if (growing) {
+      scale += 0.05;
+    } else {
+      scale -= 0.05;
+    }
+    if (scale >= 1.05) {
+      growing = false;
+    } else if (scale <= 0.95) {
+      growing = true;
+    }
+  }, 75);
+    </script>
+  
+
+</body></html>
